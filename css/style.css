@@ -53,6 +53,7 @@ a {
     display: block;
 }
 .header_image img {
+    width: 1200px;
     display: inline-block;
     text-align: center;
     margin: 0 auto;
