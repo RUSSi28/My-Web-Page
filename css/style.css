@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo','sans-serif';
+    font-size: 15px;
+    /* solid,importantについてしらべる */
+    border-top: 10px solid #79a1b1 !important;
+}
+/* リンクのアンダーラインを消すのと色を黒くした */
+a {
+    text-decoration: none;
+    color: #333;
+}
+/* ロゴのセンタリング */
+.logo {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.logo img {
+    width: 5%;
+    height: 5%;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.logo p {
+    text-align: center;
+}
+.header {
+    width: 1200px;
+    /* 上下0左右オート、ページの限界に合わせて左右にマージン、センタリング綺麗に */
+    margin: 0 auto; 
+    background: #eee;
+}
+.header ul {
+    /* 横並びになる */
+    display: flex;
+}
+.header ul li a {
+    width: 240px;
+    /* flexの補正のために使うことがある */
+    /* min-width: 240px; */
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+/* 疑似クラスの利用、最初の要素 */
+.header ul li:first-child {
+    border-left: 1px solid #ddd;
+}
+.header ul li a {
+    /* 親要素の幅全てを満たすようにする */
+    /* inline形のものとblock形のものがある */
+    display: block;
+}
+.header_image img {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
