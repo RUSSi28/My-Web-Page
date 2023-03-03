@@ -1,11 +1,22 @@
 @charset "UTF-8";
 
-body {
-    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo','sans-serif';
-    font-size: 15px;
-    /* solid,importantについてしらべる */
-    border-top: 10px solid #8a79b1 !important;
+@media screen and (max-width: 768px){
+    body {
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo','sans-serif';
+        font-size: 15px;
+        /* solid,importantについてしらべる */
+        border-top: 10px solid #8a79b1 !important;
+    }
 }
+@media screen and (max-width: 480px){
+    body {
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo','sans-serif';
+        font-size: 15px;
+        /* solid,importantについてしらべる */
+        border-top: 10px solid #8a79b1 !important;
+    }
+}
+
 /* リンクのアンダーラインを消すのと色を黒くした */
 a {
     text-decoration: none;
@@ -57,6 +68,11 @@ a {
 .header_image {
     text-align: center;
 }
+/*
+ ■blockは大きさの指定はできるが配置を指定できない
+ ■inlineは大きさの指定はできないが配置を指定できる、ブロックレベル内で使用
+ ■inlone-blockは大きさ、配置、余白の指定ができる
+ */
 .header_image img {
     width: 1200px;
     display: inline-block;
