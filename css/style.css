@@ -28,7 +28,8 @@ a {
 }
 /* 自分のよく使うものをクラスとしておく */
 .w_inner {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     /* 上下0左右オート、ページの限界に合わせて左右にマージン、センタリング綺麗に */
     margin: 0 auto; 
     background: #eee;
@@ -64,7 +65,6 @@ a {
  */
 .header_image img {
     width: 100%;
-    max-width: 800px;
     display: inline-block;
 }
 .service {
