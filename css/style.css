@@ -40,9 +40,9 @@ a {
     margin-bottom: 30px;
 }
 .header ul li a {
-    width: 239px;
+    width: 18%;
+    max-width: 239px;
     /* flexの補正のために使うことがある */
-    /* min-width: 240px; */
     border-right: 1px solid #ddd;
     text-align: center;
 }
