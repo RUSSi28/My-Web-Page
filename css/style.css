@@ -13,35 +13,44 @@ a {
 }
 /* ロゴのセンタリング */
 .logo {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    display: flex;
+    text-align: left;
+    margin: 40px 20px 30px 20px;
 }
-.logo img {
-    width: 5%;
-    height: 5%;
+.logo text {
     display: inline-block;
-    margin-bottom: 5px;
+    
 }
 .logo h1 {
+    font-size: x-large;
+    display: inline-block;
     text-align: center;
+    margin: 30px 30px 30px 0px;
+}
+.logo img {
+    width: 10%;
+    height: 10%;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 30px 10px 20px 30px;
 }
 /* 自分のよく使うものをクラスとしておく */
 .w_inner {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     /* 上下0左右オート、ページの限界に合わせて左右にマージン、センタリング綺麗に */
     margin: 0 auto; 
-    background: #eee;
+    background: #eeeeeeb4;
 }
 .header ul {
     /* 横並びになる */
     display: flex;
     margin-bottom: 30px;
+    text-align: center;
 }
 .header ul li a {
-    width: 18%;
-    max-width: 239px;
+    width: 20%;
+    min-width: 199px;
     /* flexの補正のために使うことがある */
     border-right: 1px solid #ddd;
     text-align: center;
@@ -54,6 +63,12 @@ a {
     /* 親要素の幅全てを満たすようにする */
     /* inline形のものとblock形のものがある */
     display: block;
+}
+@media screen and (max-width: 959px) {
+    .header ul li a {
+        min-width: 98px;
+        font-size: smaller;
+    }
 }
 .header_image {
     text-align: center;
@@ -100,6 +115,7 @@ a {
 .container_service .service .explain {
     display: block;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 .container_service .service a {
     display: inline-block;
