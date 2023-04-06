@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style2.css">
+    
 </head>
 <body>
     <div class="gradient">
@@ -30,13 +31,34 @@
         <a href="https://coconala.com/users/3711841" target="_blank">kokonara</a>
 
         <h2>circle -ωPrints-</h2>
-        ・サークルのhp
-        ・Twitterリンク
-        ・pixivリンク
-        ・DLsiteのリンク
+        <div class="not-ready">
+        <a href="">ωPrints hp</a>
+        </div>
+        <br>
+        <a href="https://twitter.com/omega_prints">Twitter</a>
+        <br>
+        <a href="https://www.pixiv.net/users/91751656">pixiv</a>
+        <br>
+        <a href="https://www.dlsite.com/circle/circle/worklist">DLsite</a>
+        <br>
     </div>
     <div class="question">
         <h2>お問合せ・見積り相談</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <br>
+            <input type="text" name="email" placeholder="Your Email">
+            <br>
+            <textarea name="message"></textarea>
+            <br>
+            <input type="text" name="honeypot" style="display:none">
+            <input type="hidden" name="accessKey" value="941b2b88-c614-4729-bd6f-a6fcd5801210">
+            <input type="hidden" name="subject" value="Contact us from - example.com">
+            <input type="hidden" name="replyTo" value="@">
+            <input type="hidden" name="redirectTo" value="https://russi.vercel.app/links.html">
+            <input type="submit" value="Submit">
+        </form>
     </div>
+    
 </body>
 </html>

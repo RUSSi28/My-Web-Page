@@ -25,14 +25,17 @@ a {
     display: block;
     width: 300px;
     margin-bottom: 15px;
-    padding: 20px 0;
+    padding: 20px ;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    padding: 15px px 15px 10px;
+    /* padding: 15px px 15px 10px; */
     border: 2px solid #FFFFFF;
     border-radius: 4px;
     color: white;
+}
+.not-ready a {
+    border: 2px solid red;
 }
 .gradient{
     background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0));
@@ -60,4 +63,26 @@ a {
 .question {
     background-color: black;
     display: block;
+    padding-left: 30px;
+}
+.question input {
+    text-align: center;
+    display: block;
+    margin-left: 30px;
+    width: 300px;
+    padding: 20px;
+    border: 3px solid gray;
+    border-radius: 4px;
+}
+.question input:last-child {
+    background-color: gray;
+}
+.question textarea {
+    display: block;
+    margin-left: 30px;
+    width: 1000px;
+    height: 300px;
+    padding: 20px;
+    border: 3px solid gray;
+    border-radius: 4px;
 }
