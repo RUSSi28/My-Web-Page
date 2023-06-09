@@ -1,126 +1,210 @@
 @charset "UTF-8";
-
 body {
-    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo','sans-serif';
-    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
     /* solid,importantについてしらべる */
-    border-top: 10px solid #8a79b1 !important;
+    border-top: 0px solid #22dab2 !important;
+    background-color: aliceblue;
+    background-image: url(../image/web_my_page.png);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+
 }
-/* リンクのアンダーラインを消すのと色を黒くした */
-a {
-    text-decoration: none;
-    color: #333;
-}
-/* ロゴのセンタリング */
-.logo {
-    display: flex;
-    text-align: left;
-    margin: 40px 20px 30px 20px;
-}
-.logo text {
-    display: inline-block;
-    
-}
-.logo h1 {
-    font-size: x-large;
-    display: inline-block;
-    text-align: center;
-    margin: 30px 30px 30px 0px;
-}
-.logo img {
-    width: 10%;
-    height: 10%;
-    border-radius: 8px;
-    display: inline-block;
-    margin: 30px 10px 20px 30px;
-}
-/* 自分のよく使うものをクラスとしておく */
-.w_inner {
-    width: 100%;
-    max-width: 1000px;
-    /* 上下0左右オート、ページの限界に合わせて左右にマージン、センタリング綺麗に */
-    margin: 0 auto; 
-    background: #eeeeeeb4;
-}
-.header ul {
-    /* 横並びになる */
-    display: flex;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.header ul li a {
-    width: 20%;
-    min-width: 199px;
-    /* flexの補正のために使うことがある */
-    border-right: 1px solid #ddd;
-    text-align: center;
-}
-/* 疑似クラスの利用、最初の要素 */
-.header ul li:first-child {
-    border-left: 1px solid #ddd;
-}
-.header ul li a {
-    /* 親要素の幅全てを満たすようにする */
-    /* inline形のものとblock形のものがある */
-    display: block;
-}
-@media screen and (max-width: 959px) {
-    .header ul li a {
-        min-width: 98px;
-        font-size: smaller;
+
+@media screen and (min-width: 769px) {
+    .logo img {
+        display: inline;
+        width: 20%;
+        height: 20%;
     }
 }
-.header_image {
-    text-align: center;
+
+@media screen and (max-width: 768px) and (min-width: 415px) {
+    .logo img {
+        display: inline;
+        width: 20%;
+        height: 20%;
+    }
 }
-/*
- ■blockは大きさの指定はできるが配置を指定できない
- ■inlineは大きさの指定はできないが配置を指定できる、ブロックレベル内で使用
- ■inlone-blockは大きさ、配置、余白の指定ができる
- */
-.header_image img {
-    width: 100%;
-    display: inline-block;
+
+
+
+
+
+
+@media screen and (max-width: 414px){
+    .test {
+        font-size: small;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+    .top {
+        font-size: 10px;
+    }
+    .logo img {
+        display: inline;
+        width: 20%;
+        height: 20%;
+        margin-left: 10px;
+    }
+
+
+    .profile h2 {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 20px;
+    }
+    .profile p {
+
+    }
+    .profile {
+        display: inline-block;
+        margin-top: 70%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(250,250,250,0),rgba(250,250,250,0.9));
+    }
+    .profile-image {
+        text-align: center;
+    }
+    .profile-image img {
+        width: 35%;
+        border-radius: 50%;
+    }
+
+
+
+    .spacer {
+        margin: 200px;
+    }
+    .text-center {
+        text-align: center;
+    }
 }
-.service {
-    width: 300px;
-    /* height: 300px; */
-    display: inline-block;
-} 
-.container_service .service {
-    width: 380px;
-    text-align: center;
-}
-.container_service h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-/* リストを横並びにするflex */
-.container_service .service_block {
-    display: flex;
-    justify-content: space-between;
-}
-.container_service .service img {
-    margin-bottom: 20px;
-}
-.container_service .service .title {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-.container_service .service .explain {
-    display: block;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.container_service .service a {
-    display: inline-block;
-    text-align: center;
-    background-color: #8a79b1;
-    color: #fff;
-    padding: 15px 20px 12px;
-}
+
+
+
+
+/* 
+    リンクのアンダーラインを消すのと色を黒くした
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+    ロゴのセンタリング
+    .logo {
+        display: flex;
+        text-align: left;
+        margin: 40px 20px 30px 20px;
+    }
+    .logo text {
+        display: inline-block;
+
+    }
+    .logo h1 {
+        font-size: x-large;
+        display: inline-block;
+        text-align: center;
+        margin: 30px 30px 30px 0px;
+    }
+    .logo img {
+        width: 10%;
+        height: 10%;
+        border-radius: 8px;
+        display: inline-block;
+        margin: 30px 10px 20px 30px;
+    }
+    自分のよく使うものをクラスとしておく
+    .w_inner {
+        width: 100%;
+        max-width: 1000px;
+        上下0左右オート、ページの限界に合わせて左右にマージン、センタリング綺麗に
+        margin: 0 auto; 
+        background: #eeeeeeb4;
+    }
+    .header ul {
+        横並びになる
+        display: flex;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .header ul li a {
+        width: 20%;
+        min-width: 199px;
+        flexの補正のために使うことがある
+        border-right: 1px solid #ddd;
+        text-align: center;
+    }
+    疑似クラスの利用、最初の要素
+    .header ul li:first-child {
+        border-left: 1px solid #ddd;
+    }
+    .header ul li a {
+        親要素の幅全てを満たすようにする
+        inline形のものとblock形のものがある
+        display: block;
+    }
+    @media screen and (max-width: 959px) {
+        .header ul li a {
+            min-width: 98px;
+            font-size: smaller;
+        }
+    }
+    .header_image {
+        text-align: center;
+    }
+    
+     ■blockは大きさの指定はできるが配置を指定できない
+     ■inlineは大きさの指定はできないが配置を指定できる、ブロックレベル内で使用
+     ■inlone-blockは大きさ、配置、余白の指定ができる
+    
+     .header_image img {
+         width: 100%;
+        display: inline-block;
+    }
+    .service {
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+    } 
+    .container_service .service {
+        width: 380px;
+        text-align: center;
+    }
+    .container_service h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    リストを横並びにするflex
+    .container_service .service_block {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container_service .service img {
+        margin-bottom: 20px;
+    }
+    .container_service .service .title {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .container_service .service .explain {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .container_service .service a {
+        display: inline-block;
+        text-align: center;
+        background-color: #8a79b1;
+        color: #fff;
+        padding: 15px 20px 12px;
+    }
+
+*/

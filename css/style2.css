@@ -87,6 +87,7 @@ a {
     border-radius: 4px;
 }
 
+/* スマホ版 なぜか反応しない*/
 @media screen and (max-width: 768px) {
     body {
         /* background-color: aqua; */
