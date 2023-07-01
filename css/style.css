@@ -4,21 +4,126 @@ body {
     font-size: 10px;
     /* solid,importantについてしらべる */
     border-top: 0px solid #22dab2 !important;
-    background-color: aliceblue;
     background-image: url(../image/web_my_page.png);
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
-
 }
 
 @media screen and (min-width: 769px) {
     .logo img {
         display: inline;
+        margin-left: 50px;
+        width: 10%;
+        height: 10%;
+    }
+    .profile h2 {
+        font-size: 50px;
+        font-weight: bold;
+        margin: 20px;
+    }
+    .profile p {
+        font-size: 30px;
+    }
+    .profile {
+        display: inline-block;
+        margin-top: 70%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(250,250,250,0.01),rgba(250,250,250,1));
+    }
+    .profile-image {
+        text-align: center;
+    }
+    .profile-image img {
         width: 20%;
-        height: 20%;
+        border-radius: 50%;
+    }
+    .motto {
+        font-size: 50px;
+    }
+
+
+
+    .spacer {
+        margin: 500px;
+    }
+    .spacer_L {
+        margin: 500px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .slide-in {
+        overflow: hidden;
+        display: inline-block;
+        background-color: #ffffff86;
+    }
+    
+    .slide-in_inner {
+        display: inline-block;
+    
+    }
+    
+    /*左右のアニメーション*/
+    /*事前に透過0にして消しておく*/
+    .leftAnime{
+        opacity: 0;
+    }
+    
+    .slideAnimeLeftRight {
+        animation-name:slideTextX100;
+        animation-duration:0.8s;
+        animation-fill-mode:forwards;
+        opacity: 0;
+    }
+    
+    @keyframes slideTextX100 {
+      from {
+        transform: translateX(-100%); /*要素を左の枠外に移動*/
+            opacity: 0;
+      }
+    
+      to {
+        transform: translateX(0);/*要素を元の位置に移動*/
+        opacity: 1;
+      }
+    }
+    
+    .slideAnimeRightLeft {
+        animation-name:slideTextX-100;
+        animation-duration:1.0s;
+        animation-fill-mode:forwards;
+        opacity: 0;
+    }
+    
+    
+    @keyframes slideTextX-100 {
+      from {
+        transform: translateX(100%);/*要素を右の枠外に移動*/
+        opacity: 0;
+      }
+    
+      to {
+        transform: translateX(0);/*要素を元の位置に移動*/
+        opacity: 1;
+      }
+    }
+    p {
+        text-align: right;
+        font-size: 100px;
+    }
+    .slide {
+        margin-right: 100px;
     }
 }
+
+
+
+
+
 
 @media screen and (max-width: 768px) and (min-width: 415px) {
     .logo img {
@@ -33,24 +138,20 @@ body {
 
 
 
+
+
 @media screen and (max-width: 414px){
     .test {
         font-size: small;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
-
-    .top {
-        font-size: 10px;
-    }
     .logo img {
         display: inline;
         width: 20%;
         height: 20%;
         margin-left: 10px;
     }
-
-
     .profile h2 {
         font-size: 22px;
         font-weight: bold;
@@ -76,12 +177,82 @@ body {
 
 
 
+
+
     .spacer {
         margin: 200px;
+    }
+    .spacer_L {
+        margin: 370px;
     }
     .text-center {
         text-align: center;
     }
+
+
+    
+    .slide-in {
+        overflow: hidden;
+        display: inline-block;
+        background-color: #ffffff86;
+    }
+    
+    .slide-in_inner {
+        display: inline-block;
+    
+    }
+    
+    /*左右のアニメーション*/
+    .leftAnime{
+        opacity: 0;/*事前に透過0にして消しておく*/
+    }
+    
+    .slideAnimeLeftRight {
+        animation-name:slideTextX100;
+        animation-duration:0.8s;
+        animation-fill-mode:forwards;
+        opacity: 0;
+    }
+    
+    @keyframes slideTextX100 {
+      from {
+        transform: translateX(-100%); /*要素を左の枠外に移動*/
+            opacity: 0;
+      }
+    
+      to {
+        transform: translateX(0);/*要素を元の位置に移動*/
+        opacity: 1;
+      }
+    }
+    
+    .slideAnimeRightLeft {
+        animation-name:slideTextX-100;
+        animation-duration:1.0s;
+        animation-fill-mode:forwards;
+        opacity: 0;
+    }
+    
+    
+    @keyframes slideTextX-100 {
+      from {
+        transform: translateX(100%);/*要素を右の枠外に移動*/
+        opacity: 0;
+      }
+    
+      to {
+        transform: translateX(0);/*要素を元の位置に移動*/
+        opacity: 1;
+      }
+    }
+    p {
+        text-align: right;
+        font-size: 30px;
+    }
+    .slide {
+        margin-right: 20px;
+    }
+    
 }
 
 
